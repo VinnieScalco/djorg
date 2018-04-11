@@ -22,7 +22,7 @@ SECRET_KEY = 'pp$77on&)sapx*dx#z!b1=yop==^9d6r$1b(8!g%5(vbl@vkl^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = []
 
 
 # Application definition
