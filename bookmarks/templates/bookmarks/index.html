@@ -1,7 +1,3 @@
-{% load static %}
-
-<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
-
 <h1>Bookmarks</h1>
 {% if bookmarks %}
 <ol>
@@ -12,3 +8,10 @@
 {% else %}
 <p>No bookmarks available - you should add some!</p>
 {% endif %}
+
+<h2>New bookmark</h2>
+<form method="POST" class="bookmark-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="save btn btn-default">Save</button>
+</form>
