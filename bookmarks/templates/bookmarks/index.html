@@ -7,10 +7,10 @@
 {% block content %}
 <link rel="stylesheet" type="text/css" href="{% static 'form.css' %}">
 {% if bookmarks %}
-<h1 class="bookmarksTitle">Bookmarks List</h1>
 <ol class="bookmarksList">
+    <h1>Bookmarks List</h1>
     {% for bookmark in bookmarks %}
-    <li class="TOC"><a href="{{ bookmark.url }}">{{ bookmark.name }}</a></li>
+    <li><a href="{{ bookmark.url }}">{{ bookmark.name }}</a></li>
     {% endfor %}
 </ol>
 {% else %}
