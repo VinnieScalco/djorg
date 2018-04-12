@@ -1,0 +1,24 @@
+.bookmark-form {
+    margin: 3em;
+    padding: 2em;
+    background-color: lightslategray;
+  }
+  
+  .TOC {
+    margin: 3em;
+    padding: 2em;
+    background-color: lavender;
+  }
+  
+  .bookmarksTitle {
+    margin: 3em;
+    padding: 2em;
+    background-color: goldenrod
+  }
+  
+  .bookmarksList {
+    margin: 3em;
+    padding: 2em;
+    background-color: honeydew
+  }
+  
