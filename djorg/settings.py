@@ -34,10 +34,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Our apps
-    'bookmarks',
+    # 3rd party apps
     'bootstrap4',
     'dashing',
+    # Our apps
+    'bookmarks',
 ]
 
 MIDDLEWARE = [
