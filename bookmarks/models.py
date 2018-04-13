@@ -3,11 +3,11 @@ from django.db import models
 
 # Create your models here.
 class Bookmark(models.Model):
-    FILM = 'FI'
-    GAME = 'GA'
-    MUSIC = 'MU'
-    TECH = 'TE'
-    TYPE_OF_BOOKMARK_CHOICES = (
+    FILM = 'Film'
+    GAME = 'Gaming'
+    MUSIC = 'Music'
+    TECH = 'Tech'
+    BOOKMARK_CHOICES = (
         (FILM, 'Film'),
         (GAME, 'Gaming'),
         (MUSIC, 'Music'),
@@ -20,8 +20,8 @@ class Bookmark(models.Model):
     category = models.CharField(
         'Category',
         max_length=50,
-        choices=TYPE_OF_BOOKMARK_CHOICES,
-        blank=True,
+        choices=BOOKMARK_CHOICES,
+        blank=False,
         null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     last_modified = models.DateTimeField(auto_now=True)
