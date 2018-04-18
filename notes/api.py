@@ -5,7 +5,7 @@ from .models import Note
 class NoteSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Note
-        fields = ('title', 'content')
+        fields = ('id', 'title', 'content')
 
     def create(self, validated_data):
         user = self._context['request'].user
