@@ -1,5 +1,4 @@
 {% load bootstrap4 %}
-{% load static %}
 
 <!DOCTYPE html>
 <head>
@@ -8,21 +7,19 @@
     {% bootstrap_javascript jquery='full' %}
 </head>
 
-<body class="bookmarksBackground">
+<body>
     <div id="menu">
         {% block menu %}
-        <ul class="TOC">
-            <h1>Table of Contents</h1>
+        <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/bookmarks/">Bookmarks</a></li>
+            <li><a href="/notes/">Notes</a></li>
         </ul>
         {% endblock %}
     </div>
 
     <div id="content">
-        {% block content %}
-        <h1>Welcome to Djorg!</h1>
-        {% endblock %}
+        {% block content %}<h1>!!! Welcome to Djorg !!!</h1>{% endblock %}
     </div>
 </body>
 

@@ -1,14 +1,12 @@
 {% extends "base.html" %}
 {% load bootstrap4 %}
-{% load static %}
 
 {% block title %}Djorg - Bookmarks{% endblock %}
 
 {% block content %}
-<link rel="stylesheet" type="text/css" href="{% static 'form.css' %}">
+<h1>Bookmarks</h1>
 {% if bookmarks %}
-<ol class="bookmarksList">
-    <h1>Bookmarks List</h1>
+<ol>
     {% for bookmark in bookmarks %}
     <li><a href="{{ bookmark.url }}">{{ bookmark.name }}</a></li>
     {% endfor %}

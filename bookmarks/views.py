@@ -9,6 +9,5 @@ def index(request):
         if form.is_valid():
             form.save()
     context = {'bookmarks': Bookmark.objects.all(),
-                'form': BookmarkForm()}
+               'form': BookmarkForm()}
     return render(request, 'bookmarks/index.html', context)
-
