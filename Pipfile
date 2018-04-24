@@ -1,6 +1,6 @@
 [[source]]
-url = "https://pypi.python.org/simple"
 verify_ssl = true
+url = "https://pypi.python.org/simple"
 name = "pypi"
 
 [packages]
@@ -19,4 +19,4 @@ django-allauth = "*"
 [dev-packages]
 
 [requires]
-python_version = "3.6"
+python_version = "3.5"

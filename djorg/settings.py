@@ -28,13 +28,14 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS').split(',')
 CORS_ORIGIN_WHITELIST = config('ALLOWED_CLIENTS').split(',')
 
 SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
-    'django,contrib.sites',
+    'django.contrib.sites',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
