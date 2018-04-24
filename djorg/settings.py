@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'graphene_django',
     'rest_framework',
     # Our apps
+    'blog',
     'bookmarks',
     'notes',
 ]

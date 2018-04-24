@@ -21,3 +21,8 @@ class BookmarkTestCase(TestCase):
         self.assertEqual(noted_bookmark.name, "More note-worthy bookmark")
         self.assertEqual(noted_bookmark.url, "http://www.note-this.com")
         self.assertEqual(noted_bookmark.notes, "This bookmark is worth writing a note about!")
+
+    def test_invalid_bookmarks(self):
+        """Ensure database enforces validity/constraints on Bookmarks."""
+        Bookmark.objects.create(name="Bookmark with invalid url",
+                                url="245bhnj4lbnjk34t")
